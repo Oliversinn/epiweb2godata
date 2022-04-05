@@ -61,7 +61,7 @@ das = pd.read_csv('das_godata_id.csv')
 #epiweb.to_csv('casos_epiweb.csv', sep='|', index = False)
 
 #
-epiweb = epiweb[(epiweb['distrito'] == 'JOCOTÁN') | (epiweb['distrito'] == 'CHIQUIMULA') | (epiweb['distrito'] == 'SAN SEBASTIÁN') | (epiweb['distrito'] == 'SAN FELIPE') | (epiweb['area'] == 'PETÉN NORTE')]  
+epiweb = epiweb[(epiweb['distrito'] == 'JOCOTÁN') | (epiweb['distrito'] == 'CHIQUIMULA') | (epiweb['distrito'] == 'SAN SEBASTIÁN') | (epiweb['distrito'] == 'SAN FELIPE') | (epiweb['area'] == 'PETÉN NORTE') | (epiweb['area'] == "GUATEMALA CENTRAL")]  
 #epiweb = epiweb[epiweb['area'] == 'PETÉN NORTE']
 # Seleccion de columnas a importar a Go.Data
 columnas1 = ['nombres','apellidos','sexo','edad_anios','fecha_nacimiento','municipio','distrito',
