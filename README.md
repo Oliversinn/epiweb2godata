@@ -35,62 +35,107 @@
   <summary>Índice</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Sobre el proyecto</a>
+      <a href="#sobre-el-proyecto">Sobre el proyecto</a>
       <ul>
-        <li><a href="#developed-with">Desarrollado con</a></li>
+        <li><a href="#desarrollado-con">Desarrollado con</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting started</a>
+      <a href="#para-empezar">Para empezar</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisitos</a></li>
-        <li><a href="#installation">Instalación</a></li>
+        <li><a href="#prerequisitos">Prerequisitos</a></li>
+        <li><a href="#instalacion">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#use">Uso</a></li>
-    <li><a href="#contact">Contacto</a></li>
+    <li><a href="#uso">Uso</a></li>
+    <li><a href="#contacto">Contacto</a></li>
   </ol>
 </details>
 
 
 
 <!-- ABOUT THE PROJECT -->
-## About the project
+## Sobre el proyecto
 
+En Go.Data se realiza el seguimiento de casos y contactos COVID-19 en Guatemala. Pero las fichas epidemiológicas que captan a los casos COVID-19 son almacenados en el sistema de EPIWEB. Este proyecto con epiweb2godata.py busca automatizar el proceso de transformación y carga de la base de datos de EPIWEB a Go.Data.
 
-### Developed with
+### Desarrollado con
 
 * [Python 3](https://www.python.org/downloads/)
 * [Pandas](https://pandas.pydata.org/)
 * [Numpy](https://numpy.org/)
 
-
-
-
 <!-- GETTING STARTED -->
-## Getting started
+## Para empezar
 
 
-### Prerequisites
+### Prerequisitos
 
 * Python
   ```sh
-  sudo apt-get install python
+  sudo apt-get install python3
+  sudo apt-get install python3-pip
+  pip3 install pandas
+  pip3 install numpy
+  pip3 install datetime
+  pip3 install requests
   ```
 
-### Installation
+### Instalación
 
-1. Clone the repository
+1. Clonar el repositorio
    ```sh
    git clone https://github.com/Oliversinn/epiweb2godata.git
    ```
 
 <!-- USAGE EXAMPLES -->
-## Use
+## Uso
 
+1. Funcionalidades generales
+  ```sh
+   epiweb2godata.py [-h] [--csv CSV] [--brote BROTE] [--ignorar IGNORAR]
+                        --usuario USUARIO --contraseña CONTRASEÑA
 
+  -h, --help            Muestra este mensaje de ayuda.
+  --csv CSV, -csv CSV   Nombre del archivo csv.
+  --brote BROTE, -b BROTE
+                        Seleccionar brote al que se subiran los datos.
+                        (rastreo, capacitaciones, pruebas)
+  --ignorar IGNORAR, -i IGNORAR
+                        Cantidad de casos a ignorar al momento de subir los
+                        datos.
+  --usuario USUARIO, -u USUARIO
+                        Usuario de Go.Data
+  --contraseña CONTRASEÑA, -c CONTRASEÑA
+                        Contraseña de Go.Data
+  ```
+2. Subir base de datos
+  ```sh
+  python3 epiweb2godata.py -u usuario@godata.com -c micontraseña
+  ```
+
+3. Subir base de datos al ambiente de pruebas
+  ```sh
+  python3 epiweb2godata.py -u usuario@godata.com -c micontraseña -b pruebas
+  ```
+4. Subir base de datos al ambiente de capacitaciones
+  ```sh
+  python3 epiweb2godata.py -u usuario@godata.com -c micontraseña -b capacitaciones
+  ```
+5. Subir base de datos al ambiente de pruebas
+  ```sh
+  python3 epiweb2godata.py -u usuario@godata.com -c micontraseña -b pruebas
+  ```
+6. Subir base de datos ignorando los primeros 100 datos
+  ```sh
+  python3 epiweb2godata.py -u usuario@godata.com -c micontraseña -i 100
+  ```
+6. Subir base de datos con nombre dstinto a casos_epiweb.csv
+  ```sh
+  python3 epiweb2godata.py -u usuario@godata.com -c micontraseña -csv nombredistinto.csv
+  ```
 <!-- CONTACT -->
-## Contact
+## Contacto
 
 [Oliver Mazariegos](https://mazariegos.gt/) - oliver@mazariegos.gt
 

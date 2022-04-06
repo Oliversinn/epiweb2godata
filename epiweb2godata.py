@@ -59,10 +59,39 @@ das = pd.read_csv('das_godata_id.csv')
 #dias = date.today()-timedelta(7)
 #epiweb.drop(epiweb[pd.to_datetime(epiweb.fecha_notificacion, format= '%d/%m/%Y') <= pd.to_datetime(dias)].index, inplace=True)
 #epiweb.to_csv('casos_epiweb.csv', sep='|', index = False)
-
+areas = [
+    "EL PROGRESO",
+    "SACATEPÉQUEZ",
+    "CHIMALTENANGO",
+    "ESCUINTLA",
+    "SANTA ROSA",
+    "SOLOLÁ",
+    "TOTONICAPÁN",
+    "QUETZALTENANGO",
+    "RETALHULEU",
+    "SAN MARCOS",
+    "HUEHUETENANGO",
+    "QUICHÉ",
+    "IXCÁN",
+    "BAJA VERAPAZ",
+    "ALTA VERAPAZ",
+    "PETÉN NORTE",
+    "PETÉN SUR OCCIDENTAL",
+    "PETÉN SUR ORIENTAL",
+    "IZABAL",
+    "ZACAPA",
+    "CHIQUIMULA",
+    "JALAPA",
+    "JUTIAPA",
+    "IXIL",
+    "GUATEMALA CENTRAL",
+    "GUATEMALA NOR-OCCIDENTE",
+    "GUATEMALA NOR-ORIENTE",
+    "GUATEMALA SUR"
+]
 #
-epiweb = epiweb[(epiweb['distrito'] == 'JOCOTÁN') | (epiweb['distrito'] == 'CHIQUIMULA') | (epiweb['distrito'] == 'SAN SEBASTIÁN') | (epiweb['distrito'] == 'SAN FELIPE') | (epiweb['area'] == 'PETÉN NORTE') | (epiweb['area'] == "GUATEMALA CENTRAL")]  
-#epiweb = epiweb[epiweb['area'] == 'PETÉN NORTE']
+epiweb = epiweb[(epiweb['distrito'] == 'JOCOTÁN') | (epiweb['distrito'] == 'CHIQUIMULA') | (epiweb['distrito'] == 'SAN SEBASTIÁN') | (epiweb['distrito'] == 'SAN FELIPE') | (epiweb['area'] == 'PETÉN NORTE') | (epiweb['area'] == "GUATEMALA CENTRAL") | (epiweb['area'] == "QUETZALTENANGO") | (epiweb['area'] == "GUATEMALA NOR-ORIENTE") ]  
+epiweb = epiweb[(epiweb['vigilancia'] != 'Descartado')]
 # Seleccion de columnas a importar a Go.Data
 columnas1 = ['nombres','apellidos','sexo','edad_anios','fecha_nacimiento','municipio','distrito',
            'direccion','departamento','telefono','area','servicio','fecha_notificacion','fecha_sintoma','embarazada',
@@ -384,6 +413,9 @@ epiweb['Escolaridad'] = np.select(
         '5'
     ]
 )
+
+## Dirección del paciente
+epiweb['Direccion de residencia'] = epiweb['Direccion de residencia'].apply(str).apply(lambda x: x[:] if x != 'nan' else  '' )
 
 ## Documento de identificación
 epiweb['CUI Paciente'] = epiweb['CUI Paciente'].apply(str).apply(lambda x: x[:] if x != 'nan' else  '' )
