@@ -56,8 +56,8 @@ das = pd.read_csv('das_godata_id.csv')
 
 ## Remover los casos con fecha de notificación de hace 7 días o más
 
-#dias = date.today()-timedelta(7)
-#epiweb.drop(epiweb[pd.to_datetime(epiweb.fecha_notificacion, format= '%d/%m/%Y') <= pd.to_datetime(dias)].index, inplace=True)
+dias = date.today()-timedelta(7)
+epiweb.drop(epiweb[pd.to_datetime(epiweb.fecha_notificacion, format= '%d/%m/%Y') <= pd.to_datetime(dias)].index, inplace=True)
 #epiweb.to_csv('casos_epiweb.csv', sep='|', index = False)
 areas = [
     "EL PROGRESO",
