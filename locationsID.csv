@@ -1,0 +1,317 @@
+,Área de salud,parentLocationId,dasID,Distrito de salud,dmsID
+0,alta verapaz,16,220,chahal,220161457
+1,alta verapaz,16,220,chisec,220161356
+2,alta verapaz,16,220,coban,220160142
+3,alta verapaz,16,220,coban,220160141
+4,alta verapaz,16,220,fray bartolome de las casas,220161558
+5,alta verapaz,16,220,panzos,220160748
+6,alta verapaz,16,220,teleman,220160749
+7,alta verapaz,16,220,raxruha,220161760
+8,alta verapaz,16,220,lanquin,220161154
+9,alta verapaz,16,220,san cristobal verapaz,220160344
+10,alta verapaz,16,220,san juan chamelco,220161053
+11,alta verapaz,16,220,tucuru,220160647
+12,alta verapaz,16,220,campur,220160951
+13,alta verapaz,16,220,carcha,220160952
+14,alta verapaz,16,220,la tinta,220161659
+15,alta verapaz,16,220,santa cruz,220160243
+16,alta verapaz,16,220,cahabon,220161255
+17,alta verapaz,16,220,senahu,220160850
+18,alta verapaz,16,220,tactic,220160445
+19,alta verapaz,16,220,tamahu,220160546
+20,chimaltenango,4,207,acatenango,207411147
+21,chimaltenango,4,207,chimaltenango,207401136
+22,chimaltenango,4,207,el tejar,207416152
+23,chimaltenango,4,207,parramos,207414150
+24,chimaltenango,4,207,patzicia,207409145
+25,chimaltenango,4,207,patzun,207407143
+26,chimaltenango,4,207,san andres itzapa,207413149
+27,chimaltenango,4,207,san jose poaquil,207402137
+28,chimaltenango,4,207,san juan comalapa,207404139
+29,chimaltenango,4,207,numero 3 san martin jilotepeque,207403138
+30,chimaltenango,4,207,san miguel pochuta,207408144
+31,chimaltenango,4,207,san pedro yepocapa,207412148
+32,chimaltenango,4,207,santa apolonia,207405140
+33,chimaltenango,4,207,satna cruz balanya,207410146
+34,chimaltenango,4,207,paquip tecpan,207406141
+35,chimaltenango,4,207,tecpan,207406142
+36,chimaltenango,4,207,zaragoza,207415151
+37,chiquimula,20,224,camotan,224200593
+38,chiquimula,20,224,chiquimula,224200189
+39,chiquimula,20,224,concepcion las minas,224200896
+40,chiquimula,20,224,esquipulas,224200795
+41,chiquimula,20,224,ipala,224201199
+42,chiquimula,20,224,jocotan,224200492
+43,chiquimula,20,224,olopa,224200694
+44,chiquimula,20,224,quezaltepeque,224200997
+45,chiquimula,20,224,san jacinto,224201098
+46,chiquimula,20,224,san jose la arada,224200290
+47,chiquimula,20,224,san juan ermita,224200391
+48,el progreso,2,205,guastatoya,20520161
+49,escuintla,5,208,escuintla,208501153
+50,escuintla,5,208,guanagazapa,208508161
+51,escuintla,5,208,iztapa,208510163
+52,escuintla,5,208,la democracia,208503155
+53,escuintla,5,208,la gomera,208507160
+54,escuintla,5,208,sipacate,208507159
+55,escuintla,5,208,masagua,208505157
+56,escuintla,5,208,nueva concepcion,208513167
+57,escuintla,5,208,palin,208511164
+58,escuintla,5,208,san jose,208509162
+59,escuintla,5,208,san  vicente,208512166
+60,escuintla,5,208,"santa lucia cotz,",208502154
+61,escuintla,5,208,siquinala,208504156
+62,escuintla,5,208,tiquisate,208506158
+63,guatemala central,1,278,amparo,27810130
+64,guatemala central,1,278,bethania,27810128
+65,guatemala central,1,278,centro america,27810138
+66,guatemala central,1,278,justo rufino barrios,27810135
+67,guatemala central,1,278,paraiso ii,27810129
+68,guatemala central,1,278,san rafael,27810139
+69,guatemala central,1,278,santa elena iii,27810133
+70,guatemala central,1,278,zona 1,27810137
+71,guatemala central,1,278,zona 11,27810134
+72,guatemala central,1,278,zona 3,27810131
+73,guatemala central,1,278,zona 3,27810132
+74,guatemala central,1,278,zona 5,27810140
+75,guatemala central,1,278,zona 6,27810136
+76,guatemala nor-occidente,1,203,cs chuarrancho,20311218
+77,guatemala nor-occidente,1,203,cap san jose la comunidad,20310810
+78,guatemala nor-occidente,1,203,clinica periferica primero de julio,20310813
+79,guatemala nor-occidente,1,203,cs ciudad satelite,20310812
+80,guatemala nor-occidente,1,203,cs el milagro,20310811
+81,guatemala nor-occidente,1,203,mixco,2031089
+82,guatemala nor-occidente,1,203,cap ciudad quetzal,20311015
+83,guatemala nor-occidente,1,203,san juan sacatepequez,20311016
+84,guatemala nor-occidente,1,203,cs san pedro sacatepequez,20310914
+85,guatemala nor-occidente,1,203,san pedro sacatepequez,21510927
+86,guatemala nor-occidente,1,203,san raymundo,20311117
+87,guatemala nor-oriente,1,202,chinautla,2021065
+88,guatemala nor-oriente,1,202,tierra nueva,2021066
+89,guatemala nor-oriente,1,202,fraijanes,2021138
+90,guatemala nor-oriente,1,202,palencia,2021054
+91,guatemala nor-oriente,1,202,san jose pinula,2021032
+92,guatemala nor-oriente,1,202,san jose del golfo,2021043
+93,guatemala nor-oriente,1,202,san pedro ayampuc,2021077
+94,guatemala nor-oriente,1,202,santa catarina pinula,2021021
+95,guatemala sur,1,204,amatitlan,20411419
+96,guatemala sur,1,204,san miguel petapa,20411726
+97,guatemala sur,1,204,boca del monte,20411624
+98,guatemala sur,1,204,villa canales,20411625
+99,guatemala sur,1,204,ciudad peronia,20411522
+100,guatemala sur,1,204,ciudad real,20411520
+101,guatemala sur,1,204,mezquital,20411521
+102,guatemala sur,1,204,villa nueva,20411523
+103,huehuetenango,13,216,aguacatan,2161327285
+104,huehuetenango,13,216,chiantla,2161302261
+105,huehuetenango,13,216,colotenango,2161319276
+106,huehuetenango,13,216,concepcion huista,2161322279
+107,huehuetenango,13,216,cuilco,2161304263
+108,huehuetenango,13,216,huehuetenango norte,2161301259
+109,huehuetenango,13,216,huehuetenango sur,2161301260
+110,huehuetenango,13,216,jacaltenango,2161307266
+111,huehuetenango,13,216,el naranjo,2651311293
+112,huehuetenango,13,216,la libertad,2161311269
+113,huehuetenango,13,216,malacatancito,2161303262
+114,huehuetenango,13,216,nenton,2161305264
+115,huehuetenango,13,216,santiago petatan,2161333291
+116,huehuetenango,13,216,san antonio huista,2161324281
+117,huehuetenango,13,216,san gaspar ixchil,2161329287
+118,huehuetenango,13,216,ixtahuacan,2161309268
+119,huehuetenango,13,216,san juan atitan,2161316273
+120,huehuetenango,13,216,san juan ixcoy,2161323280
+121,huehuetenango,13,216,san mateo ixtatan,2161318275
+122,huehuetenango,13,216,san miguel acatan,2161313270
+123,huehuetenango,13,216,san pedro necta,2161306265
+124,huehuetenango,13,216,soloma,2161308267
+125,huehuetenango,13,216,san rafael la independencia,2161314271
+126,huehuetenango,13,216,san rafael petzal,2161328286
+127,huehuetenango,13,216,san sebastian coatan,2161325283
+128,huehuetenango,13,216,san sebastian huehuetenango,2161320277
+129,huehuetenango,13,216,santa ana huista,2161331289
+130,huehuetenango,13,216,barillas,2161326284
+131,huehuetenango,13,216,santa eulalia,2161317274
+132,huehuetenango,13,216,santiago chimaltenango,2161330288
+133,huehuetenango,13,216,tectitan,2161321278
+134,huehuetenango,13,216,todos santos,2161315272
+135,huehuetenango,13,216,union cantinil,2161332290
+136,ixcan,14,218,ingenieros,2181420315
+137,ixcan,14,218,playa grande,2181420314
+138,ixcan,14,218,tzetun,2181420316
+139,ixcan,14,218,xalbal,2181420317
+140,ixil,14,283,chajul,2831405318
+141,ixil,14,283,cotzal,2831411319
+142,ixil,14,283,nebaj,2831413320
+143,izabal,18,222,el estor,222180374
+144,izabal,18,222,frontera rio dulce/ livingston,222180272
+145,izabal,18,222,livingston/livingston,222180273
+146,izabal,18,222,los amates,222180577
+147,izabal,18,222,morales,222180475
+148,izabal,18,222,navajoa/morales,222180476
+149,izabal,18,222,puerto barrios,222180170
+150,izabal,18,222,santo tomas de castilla / puerto barrios,222180171
+151,jutiapa,22,226,agua blanca,2262204118
+152,jutiapa,22,226,asuncion mita,2262205119
+153,jutiapa,22,226,atescatempa,2262207121
+154,jutiapa,22,226,comapa,2262211124
+155,jutiapa,22,226,conguaco,2262213126
+156,jutiapa,22,226,el adelanto,2262209123
+157,jutiapa,22,226,el progreso,2262202116
+158,jutiapa,22,226,jalpatagua,2262212125
+159,jutiapa,22,226,jerez,2262208122
+160,jutiapa,22,226,jutiapa,2262201115
+161,jutiapa,22,226,los anonos,2262201114
+162,jutiapa,22,226,ciudad pedro de alvarado,2262214127
+163,jutiapa,22,226,moyuta,2262214128
+164,jutiapa,22,226,pasaco,2262215129
+165,jutiapa,22,226,quezada,2262217131
+166,jutiapa,22,226,acatempa,2262216130
+167,jutiapa,22,226,sta catarina mita,2262203117
+168,jutiapa,22,226,yupiltepeque,2262206120
+169,peten norte,17,221,flores,2211701321
+170,peten norte,17,221,melchor de mencos,2211711325
+171,peten norte,17,221,san andres,2211704323
+172,peten norte,17,221,san francisco,2211706324
+173,peten sur occidental,17,265,las cruces,2651713329
+174,peten sur occidental,17,265,nueva esperanza,2651710327
+175,peten sur occidental,17,265,sayaxche,2651710326
+176,peten sur occidental,17,265,tierra blanca,2651710328
+177,peten sur oriental,17,266,dolores,2661708331
+178,peten sur oriental,17,266,el chal,2661714335
+179,peten sur oriental,17,266,poptun,2661712334
+180,peten sur oriental,17,266,chacte,2661709332
+181,peten sur oriental,17,266,san luis,2661709333
+182,peten sur oriental,17,266,santa ana,2661707330
+183,quetzaltenango,9,212,cabrican,212906194
+184,quetzaltenango,9,212,cajola,212907195
+185,quetzaltenango,9,212,cantel,212914201
+186,quetzaltenango,9,212,coatepeque,212920207
+187,quetzaltenango,9,212,colomba costa cuca,212917204
+188,quetzaltenango,9,212,concepcion chiquirichapa,212911199
+189,quetzaltenango,9,212,el palmar,212919206
+190,quetzaltenango,9,212,flores costa cuca,212922209
+191,quetzaltenango,9,212,genova costa cuca,212921208
+192,quetzaltenango,9,212,huitan,212915202
+193,quetzaltenango,9,212,esperanza,212923210
+194,quetzaltenango,9,212,palestina de los altos,212924211
+195,quetzaltenango,9,212,quetzaltenango,212901189
+196,quetzaltenango,9,212,salcaja,212902190
+197,quetzaltenango,9,212,san carlos sija,212904192
+198,quetzaltenango,9,212,san francisco la union,212918205
+199,quetzaltenango,9,212,san juan olintepeque,212903191
+200,quetzaltenango,9,212,san juan ostucalco,212909197
+201,quetzaltenango,9,212,san matin sacatepequez,212912200
+202,quetzaltenango,9,212,san mateo,212910198
+203,quetzaltenango,9,212,sam miguel siguila,212908196
+204,quetzaltenango,9,212,sibilia,212905193
+205,quetzaltenango,9,212,zunil,212916203
+206,quiche,14,217,canilla,2171418311
+207,quiche,14,217,chicaman,2171419312
+208,quiche,14,217,chiche,2171402295
+209,quiche,14,217,chinique,2171403296
+210,quiche,14,217,cunen,2171410303
+211,quiche,14,217,joyabaj,2171412304
+212,quiche,14,217,pachalum,2171421313
+213,quiche,14,217,patzite,2171407300
+214,quiche,14,217,sacapulas,2171416309
+215,quiche,14,217,san andres sajcabaja,2171414305
+216,quiche,14,217,san antonio ilotenango,2171408301
+217,quiche,14,217,san bartolome joc.,2171417310
+218,quiche,14,217,la parroquia,2171415307
+219,quiche,14,217,la taña,2171415306
+220,quiche,14,217,uspantan,2171415308
+221,quiche,14,217,san pedro jocopilas,2171409302
+222,quiche,14,217,santa cruz,2171401294
+223,quiche,14,217,chichicastenango,2171406298
+224,quiche,14,217,chupol,2171406299
+225,quiche,14,217,zacualpa,2171404297
+226,retalhuleu,11,214,cs champerico,2141107227
+227,retalhuleu,11,214,cs el asintal,2141109229
+228,retalhuleu,11,214,nuevo san carlos,2141108228
+229,retalhuleu,11,214,cs caballo blanco,2141101220
+230,retalhuleu,11,214,retalhuleu,2141101221
+231,retalhuleu,11,214,cs la maquina ii,2141106225
+232,retalhuleu,11,214,san andres villa seca,2141106226
+233,retalhuleu,11,214,san felipe,2141105224
+234,retalhuleu,11,214,zapotitlan,2261104230
+235,retalhuleu,11,214,san sebastian,2141102222
+236,retalhuleu,11,214,santa cruz mulua,2141103223
+237,sacatepequez,3,206,antigua guatemala,206301132
+238,sacatepequez,3,206,alontenago,206314135
+239,sacatepequez,3,206,santiago,206306134
+240,sacatepequez,3,206,sumpango,206304133
+241,san marcos,12,215,tecun uman,2151217246
+242,san marcos,12,215,comitancillo,2151204233
+243,san marcos,12,215,concepcion tutuapa,2151206235
+244,san marcos,12,215,el quetzal,2151220249
+245,san marcos,12,215,tumbador,2151213242
+246,san marcos,12,215,san rafel pie de la cuesta,2151227256
+247,san marcos,12,215,ixchiguan,2151223252
+248,san marcos,12,215,ocos,2151230258
+249,san marcos,12,215,la reforma,2151221250
+250,san marcos,12,215,malacatan,2151215244
+251,san marcos,12,215,tumbador,2151212241
+252,san marcos,12,215,san antonio sacatepequez,2151203232
+253,san marcos,12,215,san jose ojetenam,2151224253
+254,san marcos,12,215,san jose el rodeo,2151214243
+255,san marcos,12,215,san marcos,2151201231
+256,san marcos,12,215,san miguel ixtahuacan,2151205234
+257,san marcos,12,215,san pablo,2151219248
+258,san marcos,12,215,san rafael pie de la cuesta,2151211240
+259,san marcos,12,215,sibinal,2151208237
+260,san marcos,12,215,sipacapa,2151226255
+261,san marcos,12,215,tacana,2151207236
+262,san marcos,12,215,tajumulco,2151209238
+263,san marcos,12,215,tejutla,2151210239
+264,santa rosa,6,209,barberena,209602101
+265,santa rosa,6,209,casillas,209604103
+266,santa rosa,6,209,chiquimulilla,209608107
+267,santa rosa,6,209,cuilapa,209601100
+268,santa rosa,6,209,guazacapan,209611110
+269,santa rosa,6,209,nueva santa rosa,209614113
+270,santa rosa,6,209,oratorio,209606105
+271,santa rosa,6,209,pueblo nuevo viñas,209613112
+272,santa rosa,6,209,san juan tecuaco,209607106
+273,santa rosa,6,209,san rafael las flores,209605104
+274,santa rosa,6,209,santa cruz naranjo,209612111
+275,santa rosa,6,209,santa maria ixhuatan,209610109
+276,santa rosa,6,209,santa rosa de lima,209603102
+277,santa rosa,6,209,taxisco,209609108
+278,solola,7,210,guineales,210705173
+279,solola,7,210,nahuala,210705172
+280,solola,7,210,panajachel,210710175
+281,solola,7,210,san lucas toliman,210713176
+282,solola,7,210,san pablo la laguna,210715177
+283,solola,7,210,san pedro la laguna,210718178
+284,solola,7,210,santa catarina ixtahuacan,7b5b3d69-4995-49f9-ab75-3df46733fc5c
+285,solola,7,210,xejuyup,210706174
+286,solola,7,210,santa lucia utatlan,210704171
+287,solola,7,210,san tiago atitlan,210719179
+288,solola,7,210,solola,210701170
+289,suchitepequez,10,213,santo tomas la union,2131008213
+290,suchitepequez,10,213,san lorenzo,2151007218
+291,suchitepequez,10,213,santa barbara,2131015215
+292,suchitepequez,10,213,santo domingo,2131006212
+293,suchitepequez,10,213,santo tomas la union,2131017216
+294,totonicapan,8,211,momostenango,211805184
+295,totonicapan,8,211,san vicente buenabaj,211805185
+296,totonicapan,8,211,san andres xecul,211804183
+297,totonicapan,8,211,san bartolo a. caliente,211808188
+298,totonicapan,8,211,san cristobal,211802181
+299,totonicapan,8,211,san fco el alto,211803182
+300,totonicapan,8,211,santa lucia la reforma,211807187
+301,totonicapan,8,211,sta ma. chiquimula,211806186
+302,totonicapan,8,211,totonicapan,211801180
+303,zacapa,19,223,cabañas,223190784
+304,zacapa,19,223,estanzuela,223190279
+305,zacapa,19,223,gualan,223190481
+306,zacapa,19,223,huite,223191087
+307,zacapa,19,223,la union,223190986
+308,zacapa,19,223,rio hondo,223190380
+309,zacapa,19,223,san diego,223190885
+310,zacapa,19,223,san jorge,223191188
+311,zacapa,19,223,teculutan,223190582
+312,zacapa,19,223,usumatlan,223190683
+313,zacapa,19,223,zacapa,223190178
+314,baja verapaz,15,219,uno,000
+315,jalapa,21,225,uno,000

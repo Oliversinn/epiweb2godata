@@ -35,8 +35,8 @@ password = args.contraseña
 
 outbreaks = {
     'rastreo':'a44faf32-bf27-4b39-a4fb-b9fcf29ac2d7',
-    'capacitaciones':'f1fb1ec0-3107-407a-8a14-c4c0bf927f8e',
-    'pruebas':'7294fb63-7f71-46ee-bb65-856b1d983828'
+    'pruebas':'f1fb1ec0-3107-407a-8a14-c4c0bf927f8e',
+    'capacitaciones':'7294fb63-7f71-46ee-bb65-856b1d983828'
 }
 outbreakId = outbreaks[args.brote]
 
@@ -45,11 +45,13 @@ outbreakId = outbreaks[args.brote]
 print('Leyendo archivo de EPIWEB')
 epiweb = pd.read_csv(args.csv, sep='|', low_memory=False)
 ## Archivo con informacion de los IDs de las DMS en Go.Data
-print('Leyendo archivo con locationId de las DMS')
-dms = pd.read_csv('dms_godata_id.csv')
-## Archivo con informacion de los IDs de las DAS en Go.Data
-print('Leyendo archivo con locationId de las DAS')
-das = pd.read_csv('das_godata_id.csv')
+# print('Leyendo archivo con locationId de las DMS')
+# dms = pd.read_csv('dms_godata_id.csv')
+# ## Archivo con informacion de los IDs de las DAS en Go.Data
+# print('Leyendo archivo con locationId de las DAS')
+# das = pd.read_csv('das_godata_id.csv')
+print('Leyendo archivo con locationID')
+locationsId = pd.read_csv('locationsID.csv')
 ## Remover los casos que fueron contactos
 #epiweb.drop(epiweb[epiweb.contacto_caso_confirmado == 'SI'].index, inplace=True)
 #epiweb.drop(epiweb[epiweb.clasificacion == 'Descartado'].index, inplace=True)
@@ -141,29 +143,38 @@ epiweb['Área de salud'] = epiweb['Área de salud'].replace("í", "i", regex=Tru
 epiweb['Área de salud'] = epiweb['Área de salud'].replace("ó", "o", regex=True)
 epiweb['Área de salud'] = epiweb['Área de salud'].replace("ú", "u", regex=True) 
 
-dms['name'] = dms['name'].apply(lambda x: x[4:]).str.lower()
-dms['name'] = dms['name'].apply(lambda x: x[:-1] if x[-1] == ' ' else x)
-dms.rename(columns={'id':'dmsid'}, inplace=True)
+losLocationId = []
+for index, row in epiweb.iterrows():
+    if len(locationsId.loc[locationsId['Área de salud'] == row['Área de salud']].loc[locationsId['Distrito de salud'] == row['Distrito de salud']]) >0 :
+        losLocationId.append(locationsId.loc[locationsId['Área de salud'] == row['Área de salud']].loc[locationsId['Distrito de salud'] == row['Distrito de salud']]['dmsID'].values[0])
+    else:
+        losLocationId.append(locationsId.loc[locationsId['Área de salud'] == row['Área de salud']]['dasID'].unique().tolist().pop())
 
-das['name'] = das['name'].apply(lambda x: x[4:]).str.lower()
-das.rename(columns={'id':'dasid'}, inplace=True)
+epiweb['locationsId'] = losLocationId
 
-dms['name'] = dms['name'].replace("á", "a", regex=True) 
-dms['name'] = dms['name'].replace("é", "e", regex=True) 
-dms['name'] = dms['name'].replace("í", "i", regex=True)
-dms['name'] = dms['name'].replace("ó", "o", regex=True)
-dms['name'] = dms['name'].replace("ú", "u", regex=True) 
+# dms['name'] = dms['name'].apply(lambda x: x[4:]).str.lower()
+# dms['name'] = dms['name'].apply(lambda x: x[:-1] if x[-1] == ' ' else x)
+# dms.rename(columns={'id':'dmsid'}, inplace=True)
 
-das['name'] = das['name'].replace("á", "a", regex=True) 
-das['name'] = das['name'].replace("é", "e", regex=True) 
-das['name'] = das['name'].replace("í", "i", regex=True)
-das['name'] = das['name'].replace("ó", "o", regex=True)
-das['name'] = das['name'].replace("ú", "u", regex=True) 
-das['name'] = das['name'].replace("sur oriente", "sur oriental", regex=True) 
-das['name'] = das['name'].replace("peten sur occidente", "peten sur occidental", regex=True) 
+# das['name'] = das['name'].apply(lambda x: x[4:]).str.lower()
+# das.rename(columns={'id':'dasid'}, inplace=True)
 
-epiweb = epiweb.join(dms.set_index('name'), on = 'Distrito de salud')
-epiweb = epiweb.join(das.set_index('name'), on = 'Área de salud')
+# dms['name'] = dms['name'].replace("á", "a", regex=True) 
+# dms['name'] = dms['name'].replace("é", "e", regex=True) 
+# dms['name'] = dms['name'].replace("í", "i", regex=True)
+# dms['name'] = dms['name'].replace("ó", "o", regex=True)
+# dms['name'] = dms['name'].replace("ú", "u", regex=True) 
+
+# das['name'] = das['name'].replace("á", "a", regex=True) 
+# das['name'] = das['name'].replace("é", "e", regex=True) 
+# das['name'] = das['name'].replace("í", "i", regex=True)
+# das['name'] = das['name'].replace("ó", "o", regex=True)
+# das['name'] = das['name'].replace("ú", "u", regex=True) 
+# das['name'] = das['name'].replace("sur oriente", "sur oriental", regex=True) 
+# das['name'] = das['name'].replace("peten sur occidente", "peten sur occidental", regex=True) 
+
+# epiweb = epiweb.join(dms.set_index('name'), on = 'Distrito de salud')
+# epiweb = epiweb.join(das.set_index('name'), on = 'Área de salud')
 
 epiweb = epiweb[~epiweb.index.duplicated(keep='first')]
 
@@ -561,10 +572,7 @@ for index, row in epiweb.iterrows():
         case['questionnaireAnswers']["FE108documento_de_identificacion"] =  [{ "value": '1'}]
 
     # INFORMACION DE UBICACION
-    if not pd.isnull(row['dmsid']):
-        case['addresses'][0]['locationId'] = row['dmsid']
-    else:
-        case['addresses'][0]['locationId'] = row['dasid']
+    case['addresses'][0]['locationId'] = row['locationsId']
 
     # INFORMACION EPIDEMIOLOGICA
     if row['Fecha inicio de síntomas'] != '':
