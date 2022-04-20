@@ -110,6 +110,7 @@ En Go.Data se realiza el seguimiento de casos y contactos COVID-19 en Guatemala.
                         Contraseña de Go.Data
   ```
 2. Subir base de datos
+    La base de datos debe estar en la misma carpeta que el programa, debe tener el nombre de casos_epiweb.csv y el csv estar separado por "|".
   ```sh
   python3 epiweb2godata.py -u usuario@godata.com -c micontraseña
   ```

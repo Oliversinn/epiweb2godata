@@ -1,3 +1,7 @@
 ./casos_epiweb.csv
 casos_epiweb.csv
 casos_epiweb.csv
+
+.DS_Store
+*DS_Store
+DS_Store
