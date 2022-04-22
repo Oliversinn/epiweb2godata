@@ -511,7 +511,7 @@ for index, row in epiweb.iterrows():
     case = {
         'firstName': row['Nombre paciente'],
         'lastName' : row['Apellido paciente'],
-        'visualId': 'RCC-2020-99999',
+        'visualId': 'RCC-2020-9999999999',
         'gender' : row['Sexo'],
         'age': {'years': row['Edad años']},
         'addresses': [{
